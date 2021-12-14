@@ -161,7 +161,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: space-evenly;
           flex-direction: space-evenly;
-  width: 400px;
+  width: 460px;
   height: 100px;
   border-radius: 20px;
   background-color: white;
@@ -187,8 +187,7 @@ html, body {
 }
 
 .aperitives .box1 .price {
-  padding-left: 35%;
-  padding-top: 13%;
+  padding-top: 12%;
   width: 20%;
   font-weight: bold;
 }
@@ -219,7 +218,10 @@ html, body {
 }
 
 .main .box2 {
-  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 460px;
   height: 100px;
   border-radius: 20px;
   background-color: white;
@@ -240,16 +242,15 @@ html, body {
 }
 
 .main .box2 .food-description {
-  width: 100%;
+  width: 80%;
   line-height: 0.2;
   padding-top: 3%;
   padding-bottom: 1%;
 }
 
 .main .box2 .price {
-  padding-left: 75%;
-  text-align: center;
-  margin-top: -8%;
+  padding-top: 12%;
+  width: 20%;
   font-weight: bold;
 }
 
@@ -279,7 +280,10 @@ html, body {
 }
 
 .sweets .box3 {
-  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 460px;
   height: 100px;
   border-radius: 20px;
   background-color: white;
@@ -300,16 +304,15 @@ html, body {
 }
 
 .sweets .box3 .food-description {
-  width: 100%;
+  width: 80%;
   line-height: 0.2;
   padding-top: 3%;
   padding-bottom: 1%;
 }
 
 .sweets .box3 .price {
-  padding-left: 75%;
-  text-align: center;
-  margin-top: -8%;
+  padding-top: 12%;
+  width: 20%;
   font-weight: bold;
 }
 

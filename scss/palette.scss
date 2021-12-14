@@ -121,7 +121,7 @@ $mobile: 800px;
   padding-bottom: 2%;
   
   h3 {
-    padding-left: 7.2%;
+    padding-left: 4.5%;
     padding-bottom: 0.5%;
     font-weight: 400;
     font-size: 22px;
@@ -138,7 +138,7 @@ $mobile: 800px;
   .box1 {
    display: flex;
    flex-direction: space-evenly;
-   width: 400px;
+   width: 460px;
    height: 100px;
    border-radius: 20px;
    background-color: white;
@@ -158,8 +158,7 @@ $mobile: 800px;
    }
 
    .price {
-     padding-left: 35%;
-     padding-top: 13%;
+     padding-top: 12%;
      width: 20%; 
      font-weight: bold;     
    }
@@ -172,7 +171,7 @@ $mobile: 800px;
   padding-bottom: 2%;
   
   h3 {
-    padding-left: 7.2%;
+    padding-left: 4.5%;
     padding-bottom: 0.5%;
     font-weight: 400;
     font-size: 22px;
@@ -187,7 +186,8 @@ $mobile: 800px;
    justify-content: space-evenly;
 
   .box2 {
-   width: 400px;
+   display: flex;
+   width: 460px;
    height: 100px;
    border-radius: 20px;
    background-color: white;
@@ -200,18 +200,17 @@ $mobile: 800px;
    animation-delay: .2s;
    box-shadow: 4px 6px 10px #cccccc;
 
-  .food-description {
-    width: 100%;
+   .food-description {
+    width: 80%;
     line-height: 0.2;
     padding-top: 3%;
     padding-bottom: 1%;
   }
 
   .price {
-    padding-left: 75%;
-    text-align: center;
-    margin-top: -8%; 
-    font-weight: bold; 
+    padding-top: 12%;
+    width: 20%; 
+    font-weight: bold;     
   }
 }
 }
@@ -222,7 +221,7 @@ $mobile: 800px;
   padding-bottom: 2%;
   
   h3 {
-    padding-left: 7.2%;
+    padding-left: 4.5%;
     padding-bottom: 0.5%;
     font-weight: 400;
     font-size: 22px;
@@ -237,7 +236,8 @@ $mobile: 800px;
    justify-content: space-evenly;
 
   .box3 {
-   width: 400px;
+   display: flex;
+   width: 460px;
    height: 100px;
    border-radius: 20px;
    background-color: white;
@@ -251,17 +251,16 @@ $mobile: 800px;
    box-shadow: 4px 6px 10px #cccccc;
 
    .food-description {
-    width: 100%;
+    width: 80%;
     line-height: 0.2;
     padding-top: 3%;
     padding-bottom: 1%;
   }
 
   .price {
-    padding-left: 75%;
-    text-align: center;
-    margin-top: -8%; 
-    font-weight: bold; 
+    padding-top: 12%;
+    width: 20%; 
+    font-weight: bold;     
   }
   }
  }
