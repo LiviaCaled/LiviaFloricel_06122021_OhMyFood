@@ -112,7 +112,7 @@ html, body {
   cursor: pointer;
 }
 
-.name-restaurant i:hover:before {
+.name-restaurant i:hover {
   -webkit-transition: all .60s ease-in-out;
   transition: all .60s ease-in-out;
   background-clip: text;

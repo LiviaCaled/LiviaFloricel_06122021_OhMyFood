@@ -255,7 +255,7 @@ header h1 {
   cursor: pointer;
 }
 
-.name i:hover:before {
+.name i:hover {
   -webkit-transition: all .60s ease-in-out;
   transition: all .60s ease-in-out;
   background-clip: text;
