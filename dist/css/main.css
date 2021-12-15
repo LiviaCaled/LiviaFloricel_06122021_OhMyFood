@@ -6,29 +6,6 @@ body {
   margin: 0%;
 }
 
-.first-page {
-  -webkit-transition: width 2s;
-  transition: width 2s;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  -webkit-animation: 1s;
-          animation: 1s;
-}
-
-.first-page h2 {
-  font-family: 'Shrikhand', cursive;
-  font-size: 50px;
-  text-align: center;
-  padding-right: 10%;
-}
-
-.first-page i {
-  font-size: 40px;
-  padding-left: 60%;
-}
-
 header {
   -webkit-box-shadow: 4px 6px 10px #cccccc;
           box-shadow: 4px 6px 10px #cccccc;
@@ -126,7 +103,7 @@ header h1 {
   font-size: 20px;
   width: 30%;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-property: -webkit-transform;
@@ -161,11 +138,23 @@ header h1 {
 }
 
 .steps-holder button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #f2f2f2;
   border: none;
   border-radius: 30px;
   -webkit-box-shadow: #818181 2px 3px 3px;
           box-shadow: #818181 2px 3px 3px;
+}
+
+.steps-holder button .number {
+  padding: 2% 3% 2% 3%;
+  margin-left: -3%;
+  margin-top: -1%;
+  background-color: #9356DC;
+  border-radius: 60px;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -296,5 +285,145 @@ header h1 {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+
+/* overlay animation */
+.loader {
+  width: 200px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+.loader div {
+  z-index: 999;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 10px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.5s infinite ease-in-out;
+  animation: sk-stretchdelay 1.5s infinite ease-in-out;
+}
+
+.loader .line2 {
+  -webkit-animation-delay: -1.4s;
+  animation-delay: -1.4s;
+}
+
+.loader .line3 {
+  -webkit-animation-delay: -1.3s;
+  animation-delay: -1.3s;
+}
+
+.loader .line4 {
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.loader .line5 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.loader .line6 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.loader .line7 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.loader .line8 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.loader .line9 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.loader .line10 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
 /*# sourceMappingURL=main.css.map */
