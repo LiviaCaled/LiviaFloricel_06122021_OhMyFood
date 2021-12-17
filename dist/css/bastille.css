@@ -1,14 +1,61 @@
-/*@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-   25%  {
-     transform: scale(1.035);
-   }
-   50% {
-     transform: scale(1);
-   }
- } */
+.choose {
+  background-color: #99e2d0;
+  width: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-duration: .8s ease-in;
+          transition-duration: .8s ease-in;
+  overflow: hidden;
+  -webkit-transition: width 320ms ease-in;
+  transition: width 320ms ease-in;
+  cursor: pointer;
+}
+
+.icon-menu {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  font-size: 20px;
+  background-color: white;
+  color: #99E2D0;
+  padding: 10px 10px 10px 12px;
+  border-radius: 100px;
+  white-space: nowrap;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.box1:hover .choose {
+  width: 25%;
+}
+
+.box2:hover .choose {
+  width: 25%;
+}
+
+.box3:hover .choose {
+  width: 25%;
+}
+
+.choose:hover .icon-menu {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @-webkit-keyframes opacityBox {
   0% {
     opacity: 0;
@@ -21,6 +68,7 @@
             transform: scale(1.035);
   }
 }
+
 @keyframes opacityBox {
   0% {
     opacity: 0;
@@ -314,6 +362,57 @@ html, body {
   padding-top: 12%;
   width: 20%;
   font-weight: bold;
+}
+
+.aperitives {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -1900ms;
+          animation-delay: -1900ms;
+}
+
+.main {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -1000ms;
+          animation-delay: -1000ms;
+}
+
+.sweets {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -20ms;
+          animation-delay: -20ms;
+}
+
+@-webkit-keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 button {

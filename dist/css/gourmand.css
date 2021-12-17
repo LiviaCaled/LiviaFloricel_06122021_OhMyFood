@@ -192,6 +192,57 @@ html, body {
   font-weight: bold;
 }
 
+.aperitives {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: -1900s;
+          animation-delay: -1900s;
+}
+
+.main {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: -900ms;
+          animation-delay: -900ms;
+}
+
+.sweets {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: -20ms;
+          animation-delay: -20ms;
+}
+
+@-webkit-keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 /*main */
 .main-dish {
   padding-bottom: 2%;

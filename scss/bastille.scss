@@ -5,17 +5,7 @@ $tertiary-color: #99E2D0;
 $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
 $mobile: 800px;
 
-/*@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-   25%  {
-     transform: scale(1.035);
-   }
-   50% {
-     transform: scale(1);
-   }
- } */
+@import "scss/_icon.scss";
 
  @keyframes opacityBox {
       0% {
@@ -263,6 +253,35 @@ $mobile: 800px;
   }
   }
  }
+
+ .aperitives {
+  animation-timing-function: ease-in;
+  animation-name: menuAppears;
+  animation-duration: 2s;
+  animation-delay: -1900ms;
+ }
+
+ .main {
+  animation-timing-function: ease-in;
+  animation-name: menuAppears;
+  animation-duration: 2s;
+  animation-delay: -1000ms;
+ }
+
+ .sweets {
+ animation-timing-function: ease-in;
+ animation-name: menuAppears;
+ animation-duration: 2s;
+ animation-delay: -20ms;
+ }
+
+@keyframes menuAppears {
+    from {
+      opacity: 0;
+    }
+    to {opacity: 100%;
+    }
+}
 
  button {
   padding: 1% 5% 1% 5%;

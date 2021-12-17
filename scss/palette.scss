@@ -5,17 +5,7 @@ $tertiary-color: #99E2D0;
 $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
 $mobile: 800px;
 
-/*@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-   25%  {
-     transform: scale(1.035);
-   }
-   50% {
-     transform: scale(1);
-   }
- } */
+@import "scss/_icon.scss";
 
  @keyframes opacityBox {
       0% {
@@ -28,22 +18,21 @@ $mobile: 800px;
       }
  }
 
-
-@mixin flexCenter () {
+  @mixin flexCenter () {
   display: flex;
   justify-content: space-between;
-}
+  }
 
 * {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   }
 
- html, body {
+  html, body {
    margin: 0px;
    width: 100%;
    height: 100%;
- }
+  }
 
  .header {
   display: flex;
@@ -91,7 +80,7 @@ $mobile: 800px;
    font-family: 'Shrikhand', cursive;
    font-size: 50px;
    padding-left: 3%;
- }
+  }
 
   i {
    font-size: 40px;
@@ -105,9 +94,44 @@ $mobile: 800px;
     font-weight: 900;
     background-image: $gradient;
     color: transparent;
-    } 
+    }
   }
 }
+
+.aperitives {
+  animation-timing-function: ease-in;
+  animation-name: menuAppears;
+  animation-duration: 2s;
+  animation-delay: -1900ms;
+ }
+
+ .main {
+  animation-timing-function: ease-in;
+  animation-name: menuAppears;
+  animation-duration: 2s;
+  animation-delay: -1000ms;
+ }
+
+ .sweets {
+ animation-timing-function: ease-in;
+ animation-name: menuAppears;
+ animation-duration: 2s;
+ animation-delay: -20ms;
+ }
+
+@keyframes menuAppears {
+    from {
+      opacity: 0;
+    }
+    to {opacity: 100%;
+    }
+}
+
+@-webkit-keyframes itemAppear{
+  from {opacity:0;}
+  to {opacity:1;}
+  }
+
  
  /* Entrees */
 
@@ -261,9 +285,9 @@ $mobile: 800px;
     padding-top: 12%;
     width: 20%; 
     font-weight: bold;     
+    }
   }
-  }
- }
+}
 
  button {
   padding: 1% 5% 1% 5%;
@@ -282,11 +306,9 @@ $mobile: 800px;
   text-decoration: none;
   color: white;
   }
- }
+}
 
  /* footer */
-
-
 .footer {
   padding-bottom: 3%;;
   background-color:#404040;
@@ -299,7 +321,6 @@ $mobile: 800px;
       color: white;
       padding-top: 2%;
   }
-
 }
 
 .info ul {
@@ -313,7 +334,7 @@ $mobile: 800px;
   color: white;
   font-size: 18px;
   font-weight: 700;
-}
+  }
 }
 
  
