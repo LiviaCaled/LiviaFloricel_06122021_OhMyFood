@@ -5,16 +5,13 @@
   left: 25%;
   right: 0;
   height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: .8s ease-in;
   overflow: hidden;
+  transition-duration: .8s ease-in;
   transition: width 320ms ease-in;
   cursor: pointer;
-}
 
 .icon-menu {
   transition-duration: .5s;
@@ -24,7 +21,8 @@
   padding: 10px 10px 10px 12px;
   border-radius: 100px;
   white-space: nowrap;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
+  }
 }
 
 .box1:hover .choose {
@@ -39,7 +37,14 @@
   width: 25%;
 }
 
-.choose:hover .icon-menu {
-  transform: rotate(0deg);
-  transition: 0.5s;
+.box1:hover .icon-menu {
+  transform: rotate(360deg);
+}
+
+.box2:hover .icon-menu {
+  transform: rotate(360deg);
+}
+
+.box3:hover .icon-menu {
+  transform: rotate(360deg);
 }

@@ -5,7 +5,7 @@ $tertiary-color: #99E2D0;
 $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
 $mobile: 800px;
 
-@import "scss/_icon.scss";
+*@import "scss/_icon.scss";
 
  @keyframes opacityBox {
       0% {
@@ -172,7 +172,8 @@ $mobile: 800px;
    animation-fill-mode: forwards;
    opacity: 0;
    transition: opacity 1s ease-out;
-   box-shadow: 4px 6px 10px #cccccc; 
+   box-shadow: 4px 6px 10px #cccccc;
+   overflow: hidden; 
 
    .food-description {
      width: 80%;
@@ -220,6 +221,7 @@ $mobile: 800px;
    animation-name: opacityBox;
    animation-fill-mode: forwards;
    opacity: 0;
+   overflow: hidden;
    transition: opacity 1s ease-out;
    animation-delay: .2s;
    box-shadow: 4px 6px 10px #cccccc;
@@ -270,6 +272,7 @@ $mobile: 800px;
    animation-name: opacityBox;
    animation-fill-mode: forwards;
    opacity: 0;
+   overflow: hidden;
    transition: opacity 1s ease-out;
    animation-delay: .3s;
    box-shadow: 4px 6px 10px #cccccc;

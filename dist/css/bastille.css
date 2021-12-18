@@ -1,61 +1,3 @@
-.choose {
-  background-color: #99e2d0;
-  width: 0;
-  bottom: 0;
-  left: 25%;
-  right: 0;
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition-duration: .8s ease-in;
-          transition-duration: .8s ease-in;
-  overflow: hidden;
-  -webkit-transition: width 320ms ease-in;
-  transition: width 320ms ease-in;
-  cursor: pointer;
-}
-
-.icon-menu {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  font-size: 20px;
-  background-color: white;
-  color: #99E2D0;
-  padding: 10px 10px 10px 12px;
-  border-radius: 100px;
-  white-space: nowrap;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.box1:hover .choose {
-  width: 25%;
-}
-
-.box2:hover .choose {
-  width: 25%;
-}
-
-.box3:hover .choose {
-  width: 25%;
-}
-
-.choose:hover .icon-menu {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 @-webkit-keyframes opacityBox {
   0% {
     opacity: 0;
@@ -221,6 +163,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-box-shadow: 4px 6px 10px #cccccc;
@@ -281,6 +224,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-animation-delay: .2s;
@@ -343,6 +287,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-animation-delay: .3s;
@@ -468,5 +413,69 @@ button a {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+
+.choose {
+  background-color: #99e2d0;
+  width: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-transition-duration: .8s ease-in;
+          transition-duration: .8s ease-in;
+  -webkit-transition: width 320ms ease-in;
+  transition: width 320ms ease-in;
+  cursor: pointer;
+}
+
+.choose .icon-menu {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  font-size: 20px;
+  background-color: white;
+  color: #99E2D0;
+  padding: 10px 10px 10px 12px;
+  border-radius: 100px;
+  white-space: nowrap;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.box1:hover .choose {
+  width: 25%;
+}
+
+.box2:hover .choose {
+  width: 25%;
+}
+
+.box3:hover .choose {
+  width: 25%;
+}
+
+.box1:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.box2:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.box3:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=bastille.css.map */
