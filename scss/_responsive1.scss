@@ -1,0 +1,191 @@
+@media only screen and (min-width: 901px) and (max-width: 1279px) {
+  .step {
+    font-size: 18px;
+    height: 90px;
+   margin-bottom: 9%;
+   display: flex;
+   font-size: 18px;
+   align-items: center;
+ }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+ header h1{
+   font-size: 45px;
+   padding-top: 5%;
+   padding-bottom: 5%;
+ }
+ .search-location {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   input {
+     padding-left: 3%;
+   }
+ }
+   .steps-holder {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+       .step {
+        font-size: 18px;
+        min-width: 90%;
+        height: 90px;
+        margin-bottom: 9%;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+       }
+       .text {
+         padding-top: 2%;
+         padding-bottom: 3%;
+       }
+
+       .icon {
+         line-height: 1;
+       }
+   }
+ .booking {
+   padding-bottom: 8%;
+   text-align: center;
+   h2 {
+     font-size: 35px;
+     font-weight: 400;
+   }
+   p {
+     font-size: 22px;
+     padding-left: 3%;
+     padding-right: 3%;
+   }
+ }
+
+.how-to-book h2 {
+ font-weight: 400;
+ text-align: center;
+}
+
+.restaurants h2 {
+ font-weight: 400;
+ font-size: 35px;
+ text-align: center;
+}
+
+.restaurant-holder {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-top: -2%;
+ padding-bottom: 5%;
+ .restaurants {
+   width: 80%;
+   text-align: center;
+ }
+}
+
+.restaurant-list {
+min-width: 90%;
+figcaption i {
+  margin-top: -7%;
+}   
+}
+
+footer {
+ margin-top: -8%;
+}
+
+.info ul {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+}
+
+@media only screen and (max-width: 500px) {
+ header h1{
+   font-size: 45px;
+   padding-top: 5%;
+   padding-bottom: 5%;
+ }
+ .search-location {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   input {
+     padding-left: 3%;
+   }
+ }
+   .steps-holder {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+       .step {
+        font-size: 18px;
+        min-width: 90%;
+        height: 90px;
+        margin-bottom: 9%;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+       }
+       .text {
+         padding-top: 2%;
+         padding-bottom: 3%;
+       }
+
+       .icon {
+         line-height: 1;
+       }
+   }
+ .booking {
+   padding-bottom: 8%;
+   text-align: center;
+   h2 {
+     font-size: 35px;
+     font-weight: 400;
+     margin-left: 3%;
+     margin-right: 3%;
+   }
+   p {
+     font-size: 22px;
+     padding-left: 3%;
+     padding-right: 3%;
+   }
+ }
+
+.how-to-book h2 {
+ font-weight: 400;
+ text-align: center;
+}
+
+.restaurants h2 {
+ font-weight: 400;
+ font-size: 35px;
+ text-align: center;
+}
+
+.restaurant-holder {
+ margin-top: -2%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ .restaurants {
+   width: 80%;
+   text-align: center;
+ }
+}
+
+.restaurant-list {
+ min-width: 90%;
+}
+
+footer {
+ margin-top: -8%;
+}
+
+.info ul {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+} 

@@ -1,14 +1,290 @@
-/*@keyframes stretch {
-  0% {
-    transform: scale(1);
+.choose {
+  background-color: #99e2d0;
+  width: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-transition-duration: .8s ease-in;
+          transition-duration: .8s ease-in;
+  -webkit-transition: width 320ms ease-in;
+  transition: width 320ms ease-in;
+  cursor: pointer;
+}
+
+.choose .icon-menu {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  font-size: 20px;
+  background-color: white;
+  color: #99E2D0;
+  padding: 10px 10px 10px 12px;
+  border-radius: 100px;
+  white-space: nowrap;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.box1:hover .choose {
+  width: 25%;
+}
+
+.box2:hover .choose {
+  width: 25%;
+}
+
+.box3:hover .choose {
+  width: 25%;
+}
+
+.box1:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.box2:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.box3:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1550px) {
+  .entrees h3 {
+    padding-top: 3%;
   }
-   25%  {
-     transform: scale(1.035);
-   }
-   50% {
-     transform: scale(1);
-   }
- } */
+  .main-dish h3 {
+    margin-top: -3%;
+  }
+  .desserts h3 {
+    margin-top: -3%;
+  }
+  .button-order {
+    margin-top: -3%;
+  }
+  .menu {
+    margin-top: -5%;
+  }
+  .menu .aperitives {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .aperitives .box1 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .aperitives .box1 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .main .box2 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .main .box2 .food-description {
+    overflow: hidden;
+    padding-left: 3%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menu .sweets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .sweets .box3 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .sweets .box3 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 9%;
+  }
+  .big-photo {
+    height: 380px;
+  }
+  .name-restaurant h2 {
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .name-restaurant h2 i {
+    padding-top: 10%;
+    font-size: 30px;
+  }
+  .menu {
+    margin-top: -8%;
+  }
+  .menu .aperitives {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .aperitives .box1 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .aperitives .box1 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .main .box2 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .main .box2 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .sweets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .sweets .box3 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .sweets .box3 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  button .order {
+    margin-left: -20px;
+  }
+  .footer {
+    margin-top: -7%;
+    padding-bottom: 20%;
+  }
+  .footer i {
+    padding-right: 4px;
+  }
+  .info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @-webkit-keyframes opacityBox {
   0% {
     opacity: 0;
@@ -21,6 +297,7 @@
             transform: scale(1.035);
   }
 }
+
 @keyframes opacityBox {
   0% {
     opacity: 0;
@@ -173,6 +450,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-box-shadow: 4px 6px 10px #cccccc;
@@ -187,7 +465,7 @@ html, body {
 }
 
 .aperitives .box1 .price {
-  padding-top: 12%;
+  padding-top: 40px;
   width: 20%;
   font-weight: bold;
 }
@@ -284,6 +562,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-animation-delay: .2s;
@@ -300,7 +579,7 @@ html, body {
 }
 
 .main .box2 .price {
-  padding-top: 12%;
+  padding-top: 40px;
   width: 20%;
   font-weight: bold;
 }
@@ -346,6 +625,7 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-animation-delay: .3s;
@@ -362,12 +642,24 @@ html, body {
 }
 
 .sweets .box3 .price {
-  padding-top: 12%;
+  padding-top: 40px;
   width: 20%;
   font-weight: bold;
 }
 
-button {
+.button-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-order button {
   padding: 1% 5% 1% 5%;
   font-size: 20px;
   font-weight: bold;
@@ -378,12 +670,11 @@ button {
           box-shadow: #808080 2px 3px 4px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  margin-left: 45%;
   margin-top: 3%;
   margin-bottom: 5%;
 }
 
-button a {
+.button-order button a {
   text-decoration: none;
   color: white;
 }
@@ -403,6 +694,10 @@ button a {
   padding-top: 2%;
 }
 
+.footer i {
+  padding-right: 4px;
+}
+
 .info ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,5 +715,230 @@ button a {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1550px) {
+  .entrees h3 {
+    padding-top: 3%;
+  }
+  .main-dish h3 {
+    margin-top: -3%;
+  }
+  .desserts h3 {
+    margin-top: -3%;
+  }
+  .button-order {
+    margin-top: -3%;
+  }
+  .menu {
+    margin-top: -5%;
+  }
+  .menu .aperitives {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .aperitives .box1 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .aperitives .box1 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .main .box2 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .main .box2 .food-description {
+    overflow: hidden;
+    padding-left: 3%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menu .sweets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .menu .sweets .box3 {
+    margin-bottom: 8%;
+    width: 28%;
+  }
+  .menu .sweets .box3 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 9%;
+  }
+  .big-photo {
+    height: 400px;
+  }
+  .name-restaurant h2 {
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .name-restaurant h2 i {
+    padding-top: 10%;
+    font-size: 30px;
+  }
+  .menu {
+    margin-top: -5%;
+  }
+  .menu .aperitives {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .aperitives .box1 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .aperitives .box1 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .main .box2 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .main .box2 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .menu .sweets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .sweets .box3 {
+    margin-bottom: 8%;
+    width: 90%;
+  }
+  .menu .sweets .box3 .food-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  button .order {
+    margin-left: -20px;
+  }
+  .footer {
+    margin-top: -7%;
+  }
+  .footer i {
+    padding-right: 4px;
+  }
+  footer {
+    margin-top: -8%;
+  }
+  .info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=gourmand.css.map */
