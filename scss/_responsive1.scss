@@ -2,10 +2,10 @@
   .step {
     font-size: 18px;
     height: 90px;
-   margin-bottom: 9%;
-   display: flex;
-   font-size: 18px;
-   align-items: center;
+    margin-bottom: 9%;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
  }
 }
 
@@ -40,7 +40,6 @@
          padding-top: 2%;
          padding-bottom: 3%;
        }
-
        .icon {
          line-height: 1;
        }
@@ -85,7 +84,8 @@
 
 .restaurant-list {
 min-width: 90%;
-figcaption i {
+margin-bottom: 7%;
+i {
   margin-top: -7%;
 }   
 }
@@ -127,12 +127,12 @@ footer {
         display: flex;
         font-size: 18px;
         align-items: center;
+        display: flex;
        }
        .text {
          padding-top: 2%;
          padding-bottom: 3%;
        }
-
        .icon {
          line-height: 1;
        }
@@ -169,14 +169,15 @@ footer {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
- .restaurants {
-   width: 80%;
-   text-align: center;
- }
+  .restaurants {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .restaurant-list {
  min-width: 90%;
+ margin-bottom: 8%;
 }
 
 footer {

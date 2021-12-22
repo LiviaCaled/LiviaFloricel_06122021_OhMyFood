@@ -98,6 +98,9 @@
     width: 28%;
   }
   .menu .aperitives .box1 .food-description {
+    width: 80%;
+  }
+  .menu .aperitives .box1 .food-description p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -366,6 +369,9 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   background-color: #e6e6e6;
   padding-bottom: 10px;
   border-top-right-radius: 50px;
@@ -379,7 +385,7 @@ html, body {
 .name-restaurant h2 {
   font-family: 'Shrikhand', cursive;
   font-size: 50px;
-  padding-left: 3%;
+  padding-left: 3.5%;
 }
 
 .name-restaurant i {
@@ -393,10 +399,62 @@ html, body {
   -webkit-transition: all .60s ease-in-out;
   transition: all .60s ease-in-out;
   background-clip: text;
+  -webkit-background-clip: text;
   font-weight: 900;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   color: transparent;
+}
+
+.aperitives {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -1900ms;
+          animation-delay: -1900ms;
+}
+
+.main {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -1000ms;
+          animation-delay: -1000ms;
+}
+
+.sweets {
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: menuAppears;
+          animation-name: menuAppears;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: -20ms;
+          animation-delay: -20ms;
+}
+
+@-webkit-keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes menuAppears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 /* Entrees */
@@ -411,7 +469,7 @@ html, body {
 }
 
 .entrees h3 {
-  padding-left: 7.2%;
+  padding-left: 4.5%;
   padding-bottom: 0.5%;
   font-weight: 400;
   font-size: 22px;
@@ -450,18 +508,27 @@ html, body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
-  overflow: hidden;
   -webkit-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   -webkit-box-shadow: 4px 6px 10px #cccccc;
           box-shadow: 4px 6px 10px #cccccc;
+  overflow: hidden;
 }
 
 .aperitives .box1 .food-description {
   width: 80%;
-  line-height: 0.2;
-  padding-top: 3%;
-  padding-bottom: 1%;
+}
+
+.aperitives .box1 .food-description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.aperitives .box1 .food-description h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .aperitives .box1 .price {
@@ -470,64 +537,13 @@ html, body {
   font-weight: bold;
 }
 
-.aperitives {
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-name: menuAppears;
-          animation-name: menuAppears;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-delay: -1900s;
-          animation-delay: -1900s;
-}
-
-.main {
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-name: menuAppears;
-          animation-name: menuAppears;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-delay: -900ms;
-          animation-delay: -900ms;
-}
-
-.sweets {
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-name: menuAppears;
-          animation-name: menuAppears;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-delay: -20ms;
-          animation-delay: -20ms;
-}
-
-@-webkit-keyframes menuAppears {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes menuAppears {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
 /*main */
 .main-dish {
   padding-bottom: 2%;
 }
 
 .main-dish h3 {
-  padding-left: 7.2%;
+  padding-left: 4.5%;
   padding-bottom: 0.5%;
   font-weight: 400;
   font-size: 22px;
@@ -573,9 +589,18 @@ html, body {
 
 .main .box2 .food-description {
   width: 80%;
-  line-height: 0.2;
-  padding-top: 3%;
-  padding-bottom: 1%;
+}
+
+.main .box2 .food-description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.main .box2 .food-description h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .main .box2 .price {
@@ -590,7 +615,7 @@ html, body {
 }
 
 .desserts h3 {
-  padding-left: 7.2%;
+  padding-left: 4.5%;
   padding-bottom: 0.5%;
   font-weight: 400;
   font-size: 22px;
@@ -636,9 +661,18 @@ html, body {
 
 .sweets .box3 .food-description {
   width: 80%;
-  line-height: 0.2;
-  padding-top: 3%;
-  padding-bottom: 1%;
+}
+
+.sweets .box3 .food-description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sweets .box3 .food-description h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .sweets .box3 .price {
@@ -659,8 +693,8 @@ html, body {
           align-items: center;
 }
 
-.button-order button {
-  padding: 1% 5% 1% 5%;
+.button-order .order {
+  padding: 15px 80px 15px 80px;
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -672,11 +706,26 @@ html, body {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   margin-top: 3%;
   margin-bottom: 5%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
 }
 
-.button-order button a {
+.button-order .order a {
   text-decoration: none;
   color: white;
+}
+
+.button-order .order:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
 }
 
 /* footer */
@@ -829,11 +878,14 @@ html, body {
             justify-content: baseline;
   }
   .name-restaurant h2 i {
-    padding-top: 10%;
+    padding-top: 30px;
     font-size: 30px;
   }
   .menu {
     margin-top: -8%;
+  }
+  .menu .entrees h3 {
+    padding-top: 3.5%;
   }
   .menu .aperitives {
     display: -webkit-box;
@@ -861,6 +913,10 @@ html, body {
     text-overflow: ellipsis;
     overflow: hidden;
     padding-left: 3%;
+  }
+  .menu .aperitives .box1 .price {
+    padding-top: 40px;
+    width: 20%;
   }
   .menu .main {
     display: -webkit-box;

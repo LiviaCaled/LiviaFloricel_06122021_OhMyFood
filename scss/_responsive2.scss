@@ -22,47 +22,50 @@
      align-items: center;
      column-gap: 2%;
       .box1 {
-       margin-bottom: 8%;
-       width: 28%;
+        margin-bottom: 8%;
+        width: 28%;
         .food-description {
-         white-space: nowrap;
-         text-overflow: ellipsis;
-         overflow: hidden;
-         padding-left: 3%;
+          width: 80%;
+          p {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding-left: 3%;
+          }
         }
       }
     }
    .main {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     column-gap: 2%;
-     .box2 {
-     margin-bottom: 8%;
-     width: 28%;
-     .food-description {
-       overflow: hidden;
-       padding-left: 3%;
-       text-overflow: ellipsis;
-       white-space: nowrap;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2%;
+      .box2 {
+        margin-bottom: 8%;
+        width: 28%;
+      .food-description {
+        overflow: hidden;
+        padding-left: 3%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
        }
      }
    }
-   .sweets {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     column-gap: 2%;
-     .box3 {
-     margin-bottom: 8%;
-     width: 28%;
-     .food-description {
-       white-space: nowrap;
-       text-overflow: ellipsis;
-       overflow: hidden;
-       padding-left: 3%;
+    .sweets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2%;
+      .box3 {
+        margin-bottom: 8%;
+        width: 28%;
+      .food-description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 3%;
        }
      }
    }
@@ -89,7 +92,7 @@
     }
   }
   .menu {
-   margin-top: -8%;
+    margin-top: -8%;
   .aperitives {
     display: flex;
     flex-wrap: wrap;
@@ -97,8 +100,8 @@
     align-items: center;
     flex-direction: column;
     .box1 {
-    margin-bottom: 8%;
-    width: 90%;
+      margin-bottom: 8%;
+      width: 90%;
     .food-description {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -114,8 +117,8 @@
     align-items: center;
     flex-direction: column;
     .box2 {
-    margin-bottom: 8%;
-    width: 90%;
+      margin-bottom: 8%;
+      width: 90%;
     .food-description {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -131,8 +134,8 @@
     align-items: center;
     flex-direction: column;
     .box3 {
-    margin-bottom: 8%;
-    width: 90%;
+      margin-bottom: 8%;
+      width: 90%;
     .food-description {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -143,19 +146,19 @@
   }
 }
   button .order {
-   margin-left: -20px;
+    margin-left: -20px;
  }
  .footer {
-   margin-top: -7%;
-   padding-bottom: 20%;
-   i {
-    padding-right: 4px;
+    margin-top: -7%;
+    padding-bottom: 20%;
+    i {
+      padding-right: 4px;
+    }
   }
- }
 
 .info ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
+  }
 } 
