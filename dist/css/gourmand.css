@@ -384,8 +384,8 @@ html, body {
 
 .name-restaurant i {
   font-size: 40px;
-  padding-right: 3%;
-  padding-top: 2.5%;
+  padding-right: 6.5%;
+  padding-top: 3.5%;
   cursor: pointer;
 }
 
@@ -817,7 +817,7 @@ html, body {
     padding-left: 9%;
   }
   .big-photo {
-    height: 400px;
+    height: 380px;
   }
   .name-restaurant h2 {
     font-size: 30px;
@@ -833,7 +833,7 @@ html, body {
     font-size: 30px;
   }
   .menu {
-    margin-top: -5%;
+    margin-top: -8%;
   }
   .menu .aperitives {
     display: -webkit-box;
@@ -921,12 +921,10 @@ html, body {
   }
   .footer {
     margin-top: -7%;
+    padding-bottom: 20%;
   }
   .footer i {
     padding-right: 4px;
-  }
-  footer {
-    margin-top: -8%;
   }
   .info ul {
     display: -webkit-box;

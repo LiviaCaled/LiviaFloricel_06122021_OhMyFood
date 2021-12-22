@@ -84,8 +84,8 @@ $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
 
   i {
    font-size: 40px;
-   padding-right: 3%;
-   padding-top: 2.5%;
+   padding-right: 6.5%;
+   padding-top: 3.5%;
    cursor: pointer;
     
     &:hover {
@@ -423,7 +423,7 @@ $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
   }
 
   .big-photo {
-    height: 400px;
+    height: 380px;
   }
   .name-restaurant h2 {
     font-size: 30px;
@@ -435,7 +435,7 @@ $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
     }
   }
   .menu {
-   margin-top: -5%;
+   margin-top: -8%;
   .aperitives {
     display: flex;
     flex-wrap: wrap;
@@ -493,17 +493,15 @@ $gradient: linear-gradient(0deg, $primary-color, $secondary-color);
  }
  .footer {
    margin-top: -7%;
+   padding-bottom: 20%;
    i {
     padding-right: 4px;
   }
  }
- footer {
-  margin-top: -8%;
-}
 
 .info ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-}
+} 
