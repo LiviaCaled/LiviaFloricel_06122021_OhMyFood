@@ -82,15 +82,17 @@
   .big-photo {
     height: 380px;
   }
-  .name-restaurant h2 {
-    font-size: 30px;
+  .name-restaurant {
     display: flex;
     justify-content: baseline;
+    h2 {
+    font-size: 30px;
+    }
     i {
       padding-top: 10%;
       font-size: 30px;
     }
-  }
+}
   .menu {
     margin-top: -8%;
   .aperitives {

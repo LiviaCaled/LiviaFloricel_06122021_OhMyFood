@@ -167,8 +167,7 @@
   .big-photo {
     height: 380px;
   }
-  .name-restaurant h2 {
-    font-size: 30px;
+  .name-restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -176,7 +175,10 @@
         -ms-flex-pack: baseline;
             justify-content: baseline;
   }
-  .name-restaurant h2 i {
+  .name-restaurant h2 {
+    font-size: 30px;
+  }
+  .name-restaurant i {
     padding-top: 10%;
     font-size: 30px;
   }
