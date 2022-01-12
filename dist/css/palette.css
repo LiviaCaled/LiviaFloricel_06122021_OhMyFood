@@ -498,7 +498,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: space-evenly;
           flex-direction: space-evenly;
-  width: 22%;
+  width: 25%;
   height: 100px;
   border-radius: 20px;
   background-color: white;
@@ -568,7 +568,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 22%;
+  width: 25%;
   height: 100px;
   border-radius: 20px;
   background-color: white;
@@ -640,7 +640,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 22%;
+  width: 25%;
   height: 100px;
   border-radius: 20px;
   background-color: white;
